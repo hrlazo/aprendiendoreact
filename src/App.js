@@ -9,6 +9,7 @@ import Slider from './components/Slider';
 import Sidebar from './components/Sidebar';
 import Footer from './components/Footer';
 import SeccionPruebas from './components/SeccionPruebas';
+import Router from './Router';
 
 function App() {
   
@@ -24,7 +25,10 @@ function App() {
 
       <div className="center">
         <section id = "content">
-          <Peliculas/>
+
+          <Router/>
+
+          {/* <Peliculas/> */}
         </section>
 
         <Sidebar/>
