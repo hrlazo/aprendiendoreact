@@ -5,13 +5,16 @@ class Sidebar extends Component {
     return (
       <React.Fragment>
         <aside id="sidebar">
-          <div id="nav-blog" className="sidebar-item">
+        { this.props.blog === "true" &&
+            <div id="nav-blog" className="sidebar-item">
             <h3>Puedes hacer esto</h3>
             <a href="#" className="btn btn-success">
               Crear artículo
             </a>
           </div>
 
+        }
+        
           <div id="search" className="sidebar-item">
             <h3>Buscador</h3>
             <p>Encuentra el artículo que buscas</p>
@@ -21,8 +24,6 @@ class Sidebar extends Component {
             </form>
           </div>
         </aside>
-
-        <div className="clearfix"></div>
       </React.Fragment>
     );
   }
