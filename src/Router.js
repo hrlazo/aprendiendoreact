@@ -9,6 +9,8 @@ import Home from "./components/Home";
 import Footer from "./components/Footer";
 import Blog from "./components/Blog";
 import Formulario from "./components/Formulario";
+import Articles from "./components/Articles";
+import Search from "./components/Search";
 
 class Router extends Component {
   render() {
@@ -42,6 +44,8 @@ class Router extends Component {
           <Route path="/blog" element={<Blog />} exact />
           <Route path="/peliculas" element={<Peliculas />} exact />
           <Route path="/formulario" element={<Formulario />} exact />
+          <Route path="/blog/busqueda/:search" element={<Search />} exact />
+          <Route path="/blog/articulo/:id" element={<Articles/>} exact />
           <Route path="*" element={<Error />} />
 
           {/* RUTAS DE TESTEO

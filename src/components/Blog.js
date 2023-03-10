@@ -1,12 +1,10 @@
 import React, {Component} from "react";
-import Article from "./Article";
+import Articles from "./Articles";
 import Sidebar from "./Sidebar";
 import Slider from "./Slider";
 
 class Blog extends Component{
     
-
-
     render(){
         return(
             <div className="blog">
@@ -15,10 +13,11 @@ class Blog extends Component{
                 <div className="center">
                     <div id="content">
                         {/* Listado de Articulos desde la API */}
-                        <Article/>
-                       
+                        <Articles/>
                     </div>
-                    <Sidebar />
+                    <Sidebar
+                        blog='true'
+                    />
                 </div>
             </div>
         );

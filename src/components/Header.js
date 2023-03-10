@@ -1,10 +1,6 @@
 import React, { Component } from "react";
 import logo from "../assets/images/logo.svg";
-import { BrowserRouter, NavLink } from "react-router-dom";
-import { Route, Routes } from "react-router-dom";
-import Peliculas from "./Peliculas";
-import SeccionPruebas from "./SeccionPruebas";
-import MiComponente from "./MiComponente";
+import {NavLink } from "react-router-dom";
 
 class Header extends Component {
   render() {
